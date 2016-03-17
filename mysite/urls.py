@@ -19,5 +19,4 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'', include('blog.urls')),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
 ]
